@@ -37,7 +37,7 @@ if ( ! class_exists( 'Foo' ) ){
 		}
 
 		require_once 'vendor/autoload.php';
-		$DEVELOPER_KEY = 'AIzaSyAWkwSNr9-6_ZrPVIPQkl8qi2-JfRYtjDg';
+		$DEVELOPER_KEY = '';
 
 
 		$client = new Google_Client();
