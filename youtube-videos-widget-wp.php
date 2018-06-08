@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: MNT Youtube related
+Plugin Name: Youtube videos widget wp
 Plugin URI:
 Description:
 Version: 0.1
