@@ -10,19 +10,14 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
-
-
-
-
-
-if ( ! class_exists( 'Foo' ) ){
-	class Foo {
+if ( ! class_exists( 'MntYoutubeRelated' ) ){
+	class MntYoutubeRelated {
 		public $videos=[];
 	function __construct() {
-		add_action( 'template_redirect', array( &$this, 'my_hook_implementation' ) );
+		add_action( 'template_redirect', array( &$this, 'get_vids' ) );
 	}
 
-	function my_hook_implementation() {
+	function get_vids() {
 		global $post;
 
 
@@ -30,13 +25,13 @@ if ( ! class_exists( 'Foo' ) ){
 
 
 		if(!empty($yoastfocuskeyword)){
-					$q=$yoastfocuskeyword;
+			$q=$yoastfocuskeyword;
 		}else{
 			$q=$post->post_title;
-
 		}
 
 		require_once 'vendor/autoload.php';
+		
 		$DEVELOPER_KEY = '';
 
 
@@ -82,12 +77,9 @@ if ( ! class_exists( 'Foo' ) ){
 
 	}
 
-	public function my_special_method() {
-		// does something else
-	}
 	}
 }
-if ( class_exists( 'Foo' ) ){
-	$MyFoo = new Foo();
+if ( class_exists( 'MntYoutubeRelated' ) ){
+	$MyMntYoutubeRelated = new MntYoutubeRelated();
 }
 ?>
