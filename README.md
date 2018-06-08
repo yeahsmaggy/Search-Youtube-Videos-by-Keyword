@@ -1,6 +1,6 @@
 # Search-Youtube-Videos-by-Keyword
 
-## Prerequisites
+## Prerequisites
 
 - Wordpress
 
